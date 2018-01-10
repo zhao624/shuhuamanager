@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-<title>名人管理</title>
+<title>文章添加</title>
 <link href="../../resource/bootstrap-3.3.5-dist/css/bootstrap.min.css" title="" rel="stylesheet" />
 <link title="" href="../../resource/css/style.css" rel="stylesheet" type="text/css"  />
 <link title="blue" href="../../resource/css/dermadefault.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@
        <div class="subNav sublist-down"><span class="title-icon glyphicon glyphicon-chevron-down"></span><span class="sublist-title">名人管理</span>
         </div>
         <ul class="navContent" style="display:block">
-          <li class="active">
+          <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="index.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">查看</span></a> </li>
           <li >
@@ -70,7 +70,7 @@
           <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="addar.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">添加</span></a></li>
-          <li>
+          <li class="active">
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="upar.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">修改</span></a></li>
         </ul>
@@ -85,7 +85,7 @@
           <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="upproduct.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">修改</span></a></li>
-          <li >
+          <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="addproduct.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">添加</span></a></li>
         </ul>
@@ -103,44 +103,58 @@
        <!---title----->
             <div class="info-title">
               <div class="pull-left">
-                <h4><strong>Administrator，</strong></h4>
-                <p>欢迎登录管理系统！
-              </div>
-              
+                <h4><strong>请修改信息</strong></h4>
               </div>
             </div>
-            
+            <br /> 
+            <div class="manage-detail clearfix"></div>
             
             
            <!----content-list----> 
-           <table class="table">
-           	<thead>
-           		<tr>
-           			<td>id</td>
-           			<td>姓名</td>
-           			<td>描述</td>
-           			<td>头像</td>
-           			<td>状态</td>
-           			<td>分类</td>
-           			<td colspan="2">操作</td>
-           		</tr> 
-           	</thead>
-           	<tbody class=".table-striped">
-           		<tr>
-           			<td>1</td>
-           			<td>1</td>
-           			<td>1</td>
-           			<td>1</td>
-           			<td>
-           				<input type="radio" name="status" id="" />显示
-           				<input type="radio" name="status" />不显示
-           			</td>
-           			<td>显示类别</td>
-           			<td class="button">修改</td>
-           			<td class="button">删除</td>
-           		</tr>
-           	</tbody>
-           </table>
+           <div class="content">
+						<form>
+							<div class="form-group">
+								<label for="exampleInputEmail1">标题:</label>
+								<input type="text" class="form-control" id="exampleInputEmail1" placeholder="name">
+							</div>
+								<div class="form-group">
+								<label for="exampleInputFile">内容</label>
+								<textarea class="form-control" rows="3" placeholder="请输入详细描述"></textarea>
+							</div>
+							
+							
+							<div class="radio">
+								<span style="max-width: 100%;margin-bottom: 5px;font-weight: 700;display: block;">状态</span>
+							  <label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							    1
+							  </label>
+							</div>
+							
+							
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+							   0
+							  </label>
+						</div>
+						
+						<div class="radio">
+								<span style="max-width: 100%;margin-bottom: 5px;font-weight: 700;display: block;">分类</span>
+							  <label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+							    分类1
+							  </label>
+							</div>
+						<div class="radio">
+							  <label>
+							    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" >
+							    分类2
+							  </label>
+							</div>
+							<button type="submit" class="btn btn-default">Submit</button>
+						</form>
+           </div>
            
 </div>
 <script type="text/javascript">

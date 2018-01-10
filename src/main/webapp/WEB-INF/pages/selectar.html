@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-<title>名人管理</title>
+<title>文章查询</title>
 <link href="../../resource/bootstrap-3.3.5-dist/css/bootstrap.min.css" title="" rel="stylesheet" />
 <link title="" href="../../resource/css/style.css" rel="stylesheet" type="text/css"  />
 <link title="blue" href="../../resource/css/dermadefault.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@
        <div class="subNav sublist-down"><span class="title-icon glyphicon glyphicon-chevron-down"></span><span class="sublist-title">名人管理</span>
         </div>
         <ul class="navContent" style="display:block">
-          <li class="active">
+          <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="index.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">查看</span></a> </li>
           <li >
@@ -64,7 +64,7 @@
       <div class="sBox">
         <div class="subNav sublist-up"><span class="title-icon glyphicon glyphicon-chevron-up"></span><span class="sublist-title">文章管理</span></div>
         <ul class="navContent" style="display:none">
-          <li>
+          <li class="active">
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="selectar.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">查看</span></a></li>
           <li>
@@ -85,7 +85,7 @@
           <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="upproduct.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">修改</span></a></li>
-          <li >
+          <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="addproduct.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">添加</span></a></li>
         </ul>
@@ -96,11 +96,13 @@
   </div>
   
   
+  
   <div class="right-product my-index right-full">
      <div class="container-fluid">
 	   <div class="info-center">
        
        <!---title----->
+            
             <div class="info-title">
               <div class="pull-left">
                 <h4><strong>Administrator，</strong></h4>
@@ -111,17 +113,15 @@
             </div>
             
             
-            
            <!----content-list----> 
            <table class="table">
            	<thead>
            		<tr>
            			<td>id</td>
-           			<td>姓名</td>
-           			<td>描述</td>
-           			<td>头像</td>
-           			<td>状态</td>
+           			<td>标题</td>
+           			<td>内容</td>
            			<td>分类</td>
+           			<td>状态</td>
            			<td colspan="2">操作</td>
            		</tr> 
            	</thead>
@@ -130,12 +130,14 @@
            			<td>1</td>
            			<td>1</td>
            			<td>1</td>
-           			<td>1</td>
+           			<td>
+           				<input type="radio" name="cate" id="" />分类
+           				<input type="radio" name="cate" />分类
+           			</td>
            			<td>
            				<input type="radio" name="status" id="" />显示
            				<input type="radio" name="status" />不显示
            			</td>
-           			<td>显示类别</td>
            			<td class="button">修改</td>
            			<td class="button">删除</td>
            		</tr>

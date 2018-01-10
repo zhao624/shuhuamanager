@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
-<title>名人管理</title>
+<title>作品查询</title>
 <link href="../../resource/bootstrap-3.3.5-dist/css/bootstrap.min.css" title="" rel="stylesheet" />
 <link title="" href="../../resource/css/style.css" rel="stylesheet" type="text/css"  />
 <link title="blue" href="../../resource/css/dermadefault.css" rel="stylesheet" type="text/css"/>
@@ -47,7 +47,7 @@
        <div class="subNav sublist-down"><span class="title-icon glyphicon glyphicon-chevron-down"></span><span class="sublist-title">名人管理</span>
         </div>
         <ul class="navContent" style="display:block">
-          <li class="active">
+          <li>
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="index.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">查看</span></a> </li>
           <li >
@@ -79,7 +79,7 @@
       <div class="sBox">
         <div class="subNav sublist-up"><span class="title-icon glyphicon glyphicon-chevron-up"></span><span class="sublist-title">书画管理</span></div>
         <ul class="navContent" style="display:none">
-          <li>
+          <li class="active">
             <div class="showtitle" style="width:100px;"><img src="img/leftimg.png" /></div>
             <a href="selectp.html"><span class="sublist-icon glyphicon glyphicon-user"></span><span class="sub-title">查看 </span></a></li>
           <li>
@@ -94,6 +94,7 @@
       
     </div>
   </div>
+  
   
   
   <div class="right-product my-index right-full">
@@ -117,25 +118,30 @@
            	<thead>
            		<tr>
            			<td>id</td>
-           			<td>姓名</td>
-           			<td>描述</td>
-           			<td>头像</td>
+           			<td>作品名称</td>
+           			<td>作品图像</td>
+           			<td>所属分类</td>
            			<td>状态</td>
-           			<td>分类</td>
+           			<td>创建时间</td>
+           			<td>更新时间</td>	
            			<td colspan="2">操作</td>
            		</tr> 
            	</thead>
            	<tbody class=".table-striped">
            		<tr>
-           			<td>1</td>
-           			<td>1</td>
-           			<td>1</td>
-           			<td>1</td>
+           			<td>id</td>
+           			<td>名称</td>
+           			<td>图像</td>
+           			<td>
+           				<input type="radio" name="cate" id="" />分类
+           				<input type="radio" name="cate" />分类
+           			</td>
            			<td>
            				<input type="radio" name="status" id="" />显示
            				<input type="radio" name="status" />不显示
            			</td>
-           			<td>显示类别</td>
+           			<td>date</td>
+           			<td>date</td>
            			<td class="button">修改</td>
            			<td class="button">删除</td>
            		</tr>
